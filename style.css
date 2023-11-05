@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    font-family: 'Fredoka One', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #267ADD;
+}
+
+#heading{
+    font-size: 5rem;
+    color: #FAB201;
+    font-weight: 900;
+    -webkit-text-stroke: 4px white; 
+}
+
+.flex{
+    display: flex;
+}
+
+#gameContainer{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    height: 100vh;
+    width: 100vw;
+}
+
+#arena, #result{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+} 
+.tableBox{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow : 2px 2px gray ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #FAB201;
+}
+
+p{
+    text-align: center;
+    line-height: 100px;
+    font-size: 60px;
+    color: white;
+}
+
+#footer{
+    color: white;
+    font-size: 2rem;
+}
+
+#newGame{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.667);
+    display: none;
+    flex-direction: column;
+}
+
+#result{
+    font-size: 50px;
+    color: white;
+}
+
+#button{
+    padding: 10px;
+    margin-top: 30px;
+    background-color:#FAB201;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #927f4e;
+}
+
+a{
+    color: white;
+}
+
+@media (max-width:650px){
+    #heading{
+        font-size: 3rem;
+        -webkit-text-stroke: 2px white;
+    }
+    #footer{
+        font-size: 1.5rem;
+    }
+    #result{
+        font-size: 35px;
+    }
+}
+@media (max-width: 500px){
+    #result{
+        font-size: 30px;
+    }
+}
+@media (max-width: 400px){
+    .tableBox{
+        height: 75px;
+        width: 75px;
+        margin: 5px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow : 2px 2px gray ;
+    }  
+}
