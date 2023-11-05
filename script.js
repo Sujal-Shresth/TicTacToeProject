@@ -1,3 +1,4 @@
+// positions to make a player win
 var winCombo = [
     [0, 1, 2],
     [3, 4, 5],
@@ -18,6 +19,7 @@ const resultMessage = document.getElementById("newGame");
 const gameResult = document.getElementById("result");
 const newGame = document.getElementById("button");
 
+// using event delegation to change innerText and combos that a player attempts
 document.addEventListener('click', e => {
     if(e.target.classList.contains('tableBox')){
         if(e.target.innerHTML == ""){
@@ -46,7 +48,7 @@ document.addEventListener('click', e => {
     }
 })
 
-
+// function to check the player's combo and the winning combos
 function result(winCombo, combo, player){
     for(let i = 0; i < winCombo.length; i++){
         let attemptCounter = 0;
@@ -70,6 +72,7 @@ function result(winCombo, combo, player){
     }  
 }
 
+// function to restart a new game
 newGame.addEventListener('click',()=>{
     history.go(0);
 })
