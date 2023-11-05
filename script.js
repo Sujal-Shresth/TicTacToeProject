@@ -70,6 +70,6 @@ function result(winCombo, combo, player){
     }  
 }
 
-newGame.onclick=()=>{
+newGame.addEventListener('click',()=>{
     history.go(0);
-}
+})
