@@ -39,7 +39,7 @@ document.addEventListener('click', e => {
         count++;
         }
 
-        if(count == 8 && gameOver == false){
+        if(count == 9 && gameOver == false){
             resultMessage.style.display="flex";
             gameResult.innerHTML = "It's a tie 🤝 ";
         }
