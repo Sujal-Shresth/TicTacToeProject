@@ -16,7 +16,7 @@ var gameOver = false;
 
 const resultMessage = document.getElementById("newGame");
 const gameResult = document.getElementById("result");
-const restart = document.getElementById("button");
+const newGame = document.getElementById("button");
 
 document.addEventListener('click', e => {
     if(e.target.classList.contains('tableBox')){
@@ -70,6 +70,6 @@ function result(winCombo, combo, player){
     }  
 }
 
-restart.onclick=()=>{
+newGame.onclick=()=>{
     history.go(0);
 }
